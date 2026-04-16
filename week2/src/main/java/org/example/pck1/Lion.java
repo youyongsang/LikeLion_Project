@@ -37,8 +37,31 @@ public class Lion {
     }
 
     public void  print(){
-        System.out.printf("이름 : %s | 전공 : %s | 기수 : %s", name, studentName, major);
+        System.out.printf("이름 : %s | 전공 : %s | 기수 : %s\n", name, studentName, major);
     }
-    
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setStudentName(String studentName) {
+        this.studentName = studentName;
+    }
+
+    public void setMajor(String major) {
+        this.major = major;
+    }
+
+    public boolean check(String word, String mod){
+        if(word.isEmpty()){
+            System.out.println(mod+"은(는) 비어있을 수 없습니다.");
+            System.out.println(mod+"이 변경에 실패하였습니다.");
+            return false;
+        }
+        else {
+            System.out.println(mod + "이 성공적으로 변경되었습니다.");
+            return true;
+        }
+    }
 }
 
