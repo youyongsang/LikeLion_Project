@@ -1,7 +1,8 @@
 {
   "permissions": {
     "allow": [
-      "Bash(ls /Users/jinjeong/rememberBread/*.html /Users/jinjeong/rememberBread/*.css /Users/jinjeong/rememberBread/*.js)"
+      "Bash(ls /Users/jinjeong/rememberBread/*.html /Users/jinjeong/rememberBread/*.css /Users/jinjeong/rememberBread/*.js)",
+      "Bash(venv/bin/python3 -c \"from pymongo import MongoClient; from dotenv import load_dotenv; import os; load_dotenv\\(\\); client = MongoClient\\(os.getenv\\('MONGO_URI'\\), serverSelectionTimeoutMS=5000\\); print\\(client.server_info\\(\\)\\)\")"
     ]
   }
 }
