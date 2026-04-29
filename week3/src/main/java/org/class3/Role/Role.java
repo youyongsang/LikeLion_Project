@@ -1,4 +1,4 @@
-package org.class3.role;
+package org.class3.Role;
 import org.class3.policy.policy;
 
 public abstract class Role {
