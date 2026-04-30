@@ -1,5 +1,5 @@
 package org.class3.policy;
 
 public interface policy {
-    boolean method();
+    boolean SubCheck(int generation);
 }

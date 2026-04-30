@@ -1,7 +1,7 @@
 package org.class3.policy;
 
 public class P_Lion implements policy{
-    public boolean method(){
-        return true;
+    public boolean SubCheck(int generation){
+        return generation > 13;
     }
 }

@@ -9,8 +9,9 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        String name1, name2, name3, major1, major2, major3, generation1, generation2, generation3, part1,
+        String name1, name2, name3, major1, major2, major3, part1,
                 part2, part3, studentId, position, curjob;
+        int generation1, generation2, generation3;
         Scanner sc = new Scanner(System.in);
 
         System.out.println("=======아기사자 정보입력========");
@@ -19,7 +20,7 @@ public class Main {
         System.out.print("전공: ");
         major1 = sc.next();
         System.out.print("기수: ");
-        generation1 = sc.next();
+        generation1 = sc.nextInt();
         System.out.print("파트: ");
         part1 = sc.next();
         System.out.print("학번: ");
@@ -31,7 +32,7 @@ public class Main {
         System.out.print("전공: ");
         major2 = sc.next();
         System.out.print("기수: ");
-        generation2 = sc.next();
+        generation2 = sc.nextInt();
         System.out.print("파트: ");
         part2 = sc.next();
         System.out.print("직책: ");
@@ -43,7 +44,7 @@ public class Main {
         System.out.print("전공: ");
         major3 = sc.next();
         System.out.print("기수: ");
-        generation3 = sc.next();
+        generation3 = sc.nextInt();
         System.out.print("파트: ");
         part3 = sc.next();
         System.out.print("현재 직무: ");
@@ -57,5 +58,10 @@ public class Main {
         lion.print();
         staff.print();
         alumni.print();
+
+        System.out.println("=======조건 정책 결과=======");
+        lion.printCheck();
+        staff.printCheck();
+        alumni.printCheck();
     }
 }
