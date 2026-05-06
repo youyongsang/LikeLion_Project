@@ -1,7 +1,7 @@
-package org.class3.policy;
+package org.class4.policy;
 
 public class P_Staff implements policy{
-    public boolean method(){
-        return false;
+    public boolean SubCheck(int generation){
+        return generation > 13;
     }
 }

@@ -1,20 +1,16 @@
-package org.class3.Role;
-import org.class3.policy.P_Staff;
-import org.class3.policy.policy;
+package org.class4.Role;
+import org.class4.policy.P_Staff;
+import org.class4.policy.policy;
 
 public class Staff extends Role {
     private String position;
 
-    public Staff(String name, String major, String generation, String part, String position) {
+    public Staff(String name, String major, int generation, String part, String position) {
         super(name, major, generation, part);
         this.position = position;
     }
     public policy getpolicy(){
         return new P_Staff(); // staff 구현체 반환
-    }
-
-    public boolean check(){
-        return getpolicy().method();
     }
 
     public void print(){
@@ -25,5 +21,9 @@ public class Staff extends Role {
         System.out.println("-----------------------");
     };
 
-
+    public void printCheck(){
+        System.out.printf("%s (%d기)\n", getName(), getGeneration());
+        System.out.println("기수 조건 충족 여부 : " + checkmessage2());
+        System.out.println("-----------------------");
+    }
 }
